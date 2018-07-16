@@ -2,7 +2,9 @@
 
 When the submission enters the Review Stage, a notification indicates that Reviewers need to be assigned.
 
-![](learning-ojs-3-ed-rev.png)
+![](/assets/learning-ojs3.1-se-record-revstage.PNG)
+
+> Note: In the screenshot above, we see the Section Editor's view. Notice the limited Action buttons \(only Make Recommendation is available\). If we were logged in as an Editor, we would see more Action buttons \(Request Revisions, Resubmit for Review, Send to Copyediting, Decline Submission\).
 
 From the Reviewers panel, you can select Add Reviewer to assign a new Reviewer.
 
@@ -11,6 +13,8 @@ This opens a new window, where Reviewers are listed and can be selected one at a
 ![](learning-ojs-3-ed-rev-add.png)
 
 Note the details visible about the Reviewers, including their interests, past assignments, etc.
+
+In OJS releases 3.0 to 3.1.0, you cannot assign a user to review a submission if they are also an editor of the submission.  If you do, the editor will no longer be able to access the submission after they submit their review, in order to maintain the principles of blind peer review. However, starting with OJS 3.1.1, you can assign a user to review a submission if they are also an editor of the submission.
 
 At the bottom of this form, you will see options to:
 
@@ -26,13 +30,17 @@ For this demonstration, we will pick Adela as our Reviewer and hit the **Select 
 
 This initiates a new window with a message for the Reviewer.
 
-![](learning-ojs-3-ed-rev-add-3.png)
+![](/assets/learning-ojs3.1-se-record-revstage-revreq.PNG)
 
 You can revise any of the prepared text.
+
+If you are using a Blind Review method, ensure that the files you send to the Reviewer are stripped of any identifying information about the Author.
 
 Further down the form, you will see the additional details that are sent to the Reviewer including title, abstract, important dates, and a link to the files to be reviewed.
 
 ![](learning-ojs-3-ed-rev-add-4.png)
+
+By default, Reviewers will be provided with an extended text box to type in their comments. However, the Journal Manager can create Review Forms in [**Workflow Settings &gt; Review**](https://pkp.gitbooks.io/ojs3/content/en/workflow_settings.html) to ask more focused questions. If you would like the Reviewer to fill out a review form, select it under **Review Form**.
 
 Hit the **Add Reviewer** button to send the message and assign the Reviewer.
 
@@ -64,27 +72,27 @@ You can make additional changes using the blue arrow toggle next to the Reviewer
 
 At this point, we could add additional Reviewers, and then wait for their recommendations to come in.
 
-##Responding to Reviews
+## Responding to Reviews
 
 Once the Reviewers have completed their work, the Section Editor can see the results in their dashboard.Here they will see notifications that new reviews have been submitted and whether all reviews are in.
 
 ![](learning-ojs-3-ed-rev-responding.png)
 
-Use the *Read Review* link in the Reviewers panel to read the comments from the Reviewers, including those for both the Author and Editor as well as for the Editor only.
+Use the _Read Review_ link in the Reviewers panel to read the comments from the Reviewers, including those for both the Author and Editor as well as for the Editor only.
 
 ![](learning-ojs-3-ed-rev-read-reviews.png)
 
-Select the *Confirm* link at the bottom of the screen.
+Select the _Confirm_ link at the bottom of the screen.
 
 ![](learning-ojs-3-ed-rev-thank.png)
 
-In the Reviewers panel, you can now see a *Thank Reviewer* link. Choose that to thank the Reviewer.
+In the Reviewers panel, you can now see a _Thank Reviewer_ link. Choose that to thank the Reviewer.
 
 ![](learning-ojs-3-ed-rev-thank2.png)
 
 Hit the **Thank Reviewer** button to send the message.
 
-##Making the Decision
+## Making the Decision
 
 Based on the Reviewer recommendations, you can use the action buttons to make a decision.
 
@@ -100,7 +108,8 @@ Options include:
 
 **Decline Submission**: This means that the submission has not passed peer review and is unsuitable for further consideration. The submission would then move to the Archives.
 
-##Request Revisions
+## Request Revisions
+
 In this demonstration, we are going to request that the Author make some minor revisions before acceptance.
 
 To do so, select the **Request Revisions** button. This results in a new message window.
@@ -113,15 +122,15 @@ Use the **Add Reviews** button to import the Reviewer's comments from the Editor
 
 ![](learning-ojs-3-ed-rev-req-revisions2.png)
 
-If there are any attachments, such as marked up file created by a Reviewer, you can attach it here (as long as it has been anonymized).
+If there are any attachments, such as marked up file created by a Reviewer, you can attach it here \(as long as it has been anonymized\).
 
 Hit the **Record Editorial Decision** button to send the message.
 
 You must now wait for the Author to respond with her revisions.
 
-##Author Responds
+## Author Responds
 
-Once the Author has made the revisions, you should receive a message (via email and the Review Discussions panel).
+Once the Author has made the revisions, you should receive a message \(via email and the Review Discussions panel\).
 
 ![](learning-ojs-3-ed-discussion-panel.png)
 
@@ -131,7 +140,7 @@ At this point, you can download the revised file, check to make sure it is ready
 
 In this case, we're going to inform the Author that we are accepting the revisions. To do so, click on the linked title of the discussion. This will open the discussion box.
 
-![![](learning-ojs-3-ed-discussion-window.png)](learning-ojs-3-ed-discussion-window.png)
+![!\[\]\(learning-ojs-3-ed-discussion-window.png\)](learning-ojs-3-ed-discussion-window.png)
 
 Use the **Add Message** button to reply.
 
@@ -139,7 +148,7 @@ Use the **Add Message** button to reply.
 
 Another option would be to ask for further revisions, but at this point, we're ready to move on.
 
-##Moving to Copyediting
+## Moving to Copyediting
 
 The submission is now ready to be moved to copyediting. To do so, use the blue **Send to Copyediting** button.
 
@@ -152,9 +161,4 @@ This will open a new window.
 Hit the **Record Editorial Decision** button at the bottom of the window.
 
 The submission is automatically moved to the Copyediting stage.
-
-
-
-
-
 
